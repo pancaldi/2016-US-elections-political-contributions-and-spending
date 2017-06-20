@@ -1,4 +1,4 @@
-# load packages
+load packages
 
 library(tidyverse)
 data_dir < - "c:/users/jaqo_000/Desktop/"
@@ -17,8 +17,9 @@ filter(indiv16, republican == "trump")
 filter(indiv16, donors == "republican party")
 filter(indiv16, donors == "democratic party")
 
-# separate contributions data from candidates 
+# separate contributions by candidates 
 
+separate_donors <- candidates %>%
 separate(indiv16, clinton, c("donor", "city", "state", "zip code", "place of business", "amount"), sep = "_")
 separate(indiv16, trump, c("donor", "city", "state", "zip code", "place of business", "amount"), sep = "_")
 
