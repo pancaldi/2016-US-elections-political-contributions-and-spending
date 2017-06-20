@@ -17,10 +17,10 @@ filter(indiv16, republican == "trump")
 filter(indiv16, donors == "republican party")
 filter(indiv16, donors == "democratic party")
 
-# separate contributions data from the two main candidates Clinton and Trump
+# separate contributions data from candidates 
 
-separate(indiv16, Clinton, c("donor", "city", "state", "zip code", "place of business", "amount"), sep = "_")
-separate(indiv16, Trump, c("donor", "city", "state", "zip code", "place of business", "amount"), sep = "_")
+separate(indiv16, clinton, c("donor", "city", "state", "zip code", "place of business", "amount"), sep = "_")
+separate(indiv16, trump, c("donor", "city", "state", "zip code", "place of business", "amount"), sep = "_")
 
 # summarise amounts raised and spent by candidates
 
