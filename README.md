@@ -1,1 +1,0 @@
-My background is in operations/project management and customer service. Data Science is new to me, but I am open-minded about the learning prospects and perhaps the career opportunities available in the field. 
